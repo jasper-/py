@@ -1,7 +1,7 @@
 __author__     = "J. Rappard"
 __copyright__  = "Copyright 2023, J. Rappard"
 __credits__    = ["Me", "Myself", "I"]
-__license__    = "Proprietary"
+__license__    = "GNU General Public License v3.0"
 __version__    = "0.1.1"
 __maintainer__ = "J. Rappard"
 __email__      = "python@rappard.eu"
