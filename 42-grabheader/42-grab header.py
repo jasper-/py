@@ -82,6 +82,20 @@ except:
     sys.exit("               Cannot get IP-info - error: F04" + "\n")
     print("-"*line)
     sys.exit()
+    
+try:
+    # see if IP is bogon
+    if resp_["bogon"]:
+        resp_["org"] = "Internal network - bogon address"
+        resp_["loc"] = "n/a"
+        resp_["region"] = "n/a"
+        resp_["city"] = "n/a"
+        resp_["country"] = "n/a"
+except:
+    #that did not work out
+    sys.exit("               Cannot parse ipinfo.io - error: F99" + "\n")
+    print("-"*line)
+    sys.exit()
 
 #print(req)
 print("-"*line)
